@@ -6,7 +6,7 @@
 // ===== CONFIGURATION =====
 const CONFIG = {
     // Replace with your actual n8n webhook URL
-    webhookUrl: 'https://n8n.atenderzap.shop/webhook-test/kingdom-lead',
+    webhookUrl: 'https://n8n.atenderzap.shop/webhook/kingdom-lead',
     // Replace with your WhatsApp number (with country code, no +)
     whatsappNumber: '5500000000000',
     // Analysis animation duration (ms)
@@ -522,3 +522,4 @@ document.addEventListener('keydown', (e) => {
         }
     }
 });
+

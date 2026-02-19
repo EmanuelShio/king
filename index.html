@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Assessoria | Venda Mais na Internet</title>
+    <meta name="description"
+        content="Descubra como escalar suas vendas na internet com a Kingdom Assessoria. Faça o quiz e receba um direcionamento estratégico personalizado.">
+    <meta property="og:title" content="Kingdom Assessoria | Venda Mais na Internet">
+    <meta property="og:description"
+        content="Faça o quiz e receba um plano estratégico personalizado para escalar suas vendas online.">
+    <meta property="og:image" content="https://i.ibb.co/MDLWS9fT/KINGDOM-1080-x-1080-px-1.webp">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="https://i.ibb.co/TjL1Zt3/logor9.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <img src="https://i.ibb.co/TjL1Zt3/logor9.webp" alt="Kingdom Assessoria" class="logo" id="logo">
+            <div class="header-badge">
+                <span class="badge-dot"></span>
+                <span>Vagas Limitadas</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Global Progress Bar -->
+    <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-steps">
+            <div class="progress-step active" data-step="1">
+                <div class="step-circle">1</div>
+                <span>Início</span>
+            </div>
+            <div class="progress-step" data-step="2">
+                <div class="step-circle">2</div>
+                <span>Dados</span>
+            </div>
+            <div class="progress-step" data-step="3">
+                <div class="step-circle">3</div>
+                <span>Análise</span>
+            </div>
+            <div class="progress-step" data-step="4">
+                <div class="step-circle">4</div>
+                <span>Resultados</span>
+            </div>
+            <div class="progress-step" data-step="5">
+                <div class="step-circle">5</div>
+                <span>Proposta</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- STEP 1 – QUIZ INTRO                         -->
+    <!-- ============================================ -->
+    <section class="step step-1 active" id="step1">
+        <div class="hero-section">
+            <!-- Desktop Banner -->
+            <div class="hero-banner desktop-only">
+                <img src="https://i.ibb.co/KcB3pmyG/BANNER-SITE-DESCKTOP-KINGDOM-2.webp" alt="Kingdom Assessoria Banner"
+                    class="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <!-- Mobile Banner -->
+            <div class="hero-banner mobile-only">
+                <img src="https://i.ibb.co/HL3TXsCx/mobile.webp" alt="Kingdom Assessoria Mobile" class="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="exclusivity-badge animate-fade-in">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                    <span>Programa Exclusivo para Empresários</span>
+                </div>
+
+                <h1 class="hero-headline animate-slide-up">
+                    Você está a um passo de <span class="text-gradient">vender mais</span> na internet!
+                </h1>
+
+                <p class="hero-subheadline animate-slide-up delay-1">
+                    Mas antes, precisamos entender como seu negócio funciona.
+                </p>
+
+                <div class="hero-cta-wrapper animate-slide-up delay-2">
+                    <button class="btn-primary btn-glow" id="btnStart" onclick="goToStep(2)">
+                        <span>Clique em começar!</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    <p class="micro-text">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        Seus dados estão 100% seguros
+                    </p>
+                </div>
+
+                <div class="social-proof-strip animate-fade-in delay-3">
+                    <div class="avatars">
+                        <div class="avatar" style="background: linear-gradient(135deg, #0066FF, #00D4FF);">K</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #7C3AED, #EC4899);">M</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #059669, #34D399);">R</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #EA580C, #FACC15);">A</div>
+                    </div>
+                    <p><strong>+200 empresários</strong> já escalaram seus resultados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- STEP 2 – MULTI-STEP FORM                    -->
+    <!-- ============================================ -->
+    <section class="step step-2" id="step2">
+        <div class="form-container">
+            <div class="form-visual-side">
+                <img src="https://i.ibb.co/MDLWS9fT/KINGDOM-1080-x-1080-px-1.webp" alt="Kingdom Branding"
+                    class="form-branding-img">
+                <div class="form-trust-elements">
+                    <div class="trust-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Análise gratuita e sem compromisso</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        <span>Dados protegidos e confidenciais</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        <span>Resposta em menos de 24 horas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-content-side">
+                <div class="form-header">
+                    <h2 class="form-title">Conte-nos sobre <span class="text-gradient">seu negócio</span></h2>
+                    <p class="form-subtitle">Preencha os campos abaixo para recebermos sua solicitação</p>
+                </div>
+
+                <form id="quizForm" novalidate>
+                    <!-- Field: Nome -->
+                    <div class="form-group animate-slide-up" id="formGroup1">
+                        <label for="nome">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                            Qual seu nome? <span class="required">*</span>
+                        </label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required
+                            autocomplete="name">
+                        <span class="field-error" id="nomeError"></span>
+                        <span class="trust-micro">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                            Não compartilhamos seus dados
+                        </span>
+                    </div>
+
+                    <!-- Field: WhatsApp -->
+                    <div class="form-group animate-slide-up delay-1" id="formGroup2">
+                        <label for="whatsapp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            Qual seu WhatsApp? <span class="required">*</span>
+                        </label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required
+                            autocomplete="tel">
+                        <span class="field-error" id="whatsappError"></span>
+                        <span class="trust-micro">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            Entraremos em contato por WhatsApp
+                        </span>
+                    </div>
+
+                    <!-- Field: Marketing Investment (opens popup) -->
+                    <div class="form-group animate-slide-up delay-2" id="formGroup3">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                            Você já investiu ou investe em marketing atualmente? <span class="required">*</span>
+                        </label>
+                        <div class="custom-select-trigger" id="marketingTrigger" tabindex="0">
+                            <span id="marketingLabel">Selecione uma opção...</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                        <input type="hidden" id="marketing" name="marketing" required>
+                        <span class="field-error" id="marketingError"></span>
+                    </div>
+
+                    <!-- Field: Interest Level (opens popup) -->
+                    <div class="form-group animate-slide-up delay-3" id="formGroup4">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                            </svg>
+                            Qual seu nível de interesse em aumentar as vendas da sua empresa? <span
+                                class="required">*</span>
+                        </label>
+                        <div class="custom-select-trigger" id="interesseTrigger" tabindex="0">
+                            <span id="interesseLabel">Selecione uma opção...</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                        <input type="hidden" id="interesse" name="interesse" required>
+                        <span class="field-error" id="interesseError"></span>
+                    </div>
+
+                    <!-- Field: Site/Instagram -->
+                    <div class="form-group animate-slide-up delay-4" id="formGroup5">
+                        <label for="siteInstagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                            Qual site ou Instagram da empresa? <span class="required">*</span>
+                        </label>
+                        <input type="text" id="siteInstagram" name="siteInstagram"
+                            placeholder="@suaempresa ou www.suaempresa.com.br" autocomplete="url">
+                        <span class="field-error" id="siteInstagramError"></span>
+                    </div>
+
+                    <!-- Field: Email -->
+                    <div class="form-group animate-slide-up delay-4" id="formGroup6">
+                        <label for="email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            Qual seu e-mail? <span class="required">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@empresa.com" required
+                            autocomplete="email">
+                        <span class="field-error" id="emailError"></span>
+                    </div>
+
+                    <!-- Field: Serviço (opens popup) -->
+                    <div class="form-group animate-slide-up delay-4" id="formGroup7">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                <polyline points="2 17 12 22 22 17" />
+                                <polyline points="2 12 12 17 22 12" />
+                            </svg>
+                            Selecione o Serviço <span class="required">*</span>
+                        </label>
+                        <div class="custom-select-trigger" id="servicoTrigger" tabindex="0">
+                            <span id="servicoLabel">Selecione uma opção...</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                        <input type="hidden" id="servico" name="servico" required>
+                        <span class="field-error" id="servicoError"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-glow btn-full" id="btnSubmit">
+                        <span>Avançar</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </button>
+
+                    <p class="form-disclaimer">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                        Ao clicar em Avançar, você concorda com nossos termos de uso e política de privacidade.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- STEP 3 – ANALYSIS SCREEN                    -->
+    <!-- ============================================ -->
+    <section class="step step-3" id="step3">
+        <div class="analysis-container">
+            <div class="analysis-icon">
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring delay-1"></div>
+                <div class="analysis-logo">
+                    <img src="https://i.postimg.cc/m2VQ7K6t/Whats-App-Image-2026-02-19-at-03-27-39.jpg" alt="Kingdom"
+                        class="analysis-logo-img">
+                </div>
+            </div>
+
+            <h2 class="analysis-headline">Estamos analisando suas informações...</h2>
+            <p class="analysis-subheadline">Nosso time está preparando um direcionamento estratégico para o seu negócio.
+            </p>
+
+            <div class="analysis-progress-wrapper">
+                <div class="analysis-progress-bar">
+                    <div class="analysis-progress-fill" id="analysisProgress"></div>
+                </div>
+                <div class="analysis-progress-info">
+                    <span id="analysisPercent">0%</span>
+                    <span id="analysisStatus">Iniciando análise...</span>
+                </div>
+            </div>
+
+            <div class="analysis-steps-list">
+                <div class="analysis-step-item" id="analysisStep1">
+                    <div class="analysis-check">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                    </div>
+                    <span>Verificando dados de contato</span>
+                </div>
+                <div class="analysis-step-item" id="analysisStep2">
+                    <div class="analysis-check">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                    </div>
+                    <span>Analisando segmento de mercado</span>
+                </div>
+                <div class="analysis-step-item" id="analysisStep3">
+                    <div class="analysis-check">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                    </div>
+                    <span>Preparando direcionamento estratégico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- STEP 4 – SOCIAL PROOF VIDEO                 -->
+    <!-- ============================================ -->
+    <section class="step step-4" id="step4">
+        <div class="social-proof-container">
+            <div class="sp-header">
+                <div class="sp-badge animate-fade-in">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    <span>Casos Reais de Sucesso</span>
+                </div>
+                <h2 class="sp-headline animate-slide-up">
+                    Veja o que nossos clientes estão <span class="text-gradient">conquistando</span>
+                </h2>
+                <p class="sp-subtext animate-slide-up delay-1">
+                    Resultados reais de empresários que confiaram na Kingdom Assessoria para transformar sua presença
+                    digital.
+                </p>
+            </div>
+
+            <div class="video-wrapper animate-slide-up delay-2">
+                <div class="video-frame">
+                    <iframe id="socialProofVideo" src="https://www.youtube.com/embed/Hm5d0DcjFCo?rel=0&modestbranding=1"
+                        title="Depoimentos Kingdom Assessoria" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="sp-stats animate-fade-in delay-3">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Clientes atendidos</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="95">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Taxa de satisfação</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="25">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Aumento médio em vendas</span>
+                </div>
+            </div>
+
+            <div class="sp-authority animate-slide-up delay-3">
+                <p>A Kingdom Assessoria já ajudou centenas de empresários a multiplicarem seus resultados usando
+                    estratégias de marketing digital comprovadas. Nosso método é personalizado para cada negócio, com
+                    foco em <strong>resultados reais e mensuráveis</strong>.</p>
+            </div>
+
+            <div class="sp-cta animate-slide-up delay-4">
+                <button class="btn-primary btn-glow" onclick="goToStep(5)">
+                    <span>Quero aplicar isso no meu negócio</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- STEP 5 – FINAL VSL PAGE                     -->
+    <!-- ============================================ -->
+    <section class="step step-5" id="step5">
+        <div class="vsl-container">
+            <!-- Mobile Banner 2 -->
+            <div class="vsl-hero-bg mobile-only">
+                <img src="https://i.ibb.co/qLhfZ37q/SITE-KINGDOM-MOBILE-2.webp" alt="Kingdom" class="vsl-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="vsl-header">
+                <div class="vsl-badge animate-fade-in">
+                    <span class="badge-dot"></span>
+                    <span>Seu plano estratégico está pronto</span>
+                </div>
+                <h2 class="vsl-headline animate-slide-up">
+                    Transforme sua empresa em uma <span class="text-gradient">máquina de vendas online</span>
+                </h2>
+                <p class="vsl-subheadline animate-slide-up delay-1">
+                    Descubra o método exclusivo que está ajudando empresários a faturar 25% mais usando o digital de
+                    forma estratégica e previsível.
+                </p>
+            </div>
+
+            <div class="vsl-video-wrapper animate-slide-up delay-2">
+                <div class="video-frame vsl-frame">
+                    <iframe id="vslVideo" src="https://www.youtube.com/embed/vhZVUxdfzjA?rel=0&modestbranding=1"
+                        title="VSL Kingdom Assessoria" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="vsl-benefits animate-slide-up delay-3">
+                <h3>O que você vai conquistar:</h3>
+                <ul class="benefits-list">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Estratégia personalizada de marketing digital para o seu negócio</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Aumento previsível de leads qualificados todos os meses</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Redução do custo por aquisição de clientes (CAC)</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Automação inteligente do atendimento e vendas</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Gestão profissional de tráfego pago com ROI garantido</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Dashboard com métricas em tempo real e relatórios semanais</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="vsl-authority animate-fade-in delay-3">
+                <div class="authority-card">
+                    <img src="https://i.ibb.co/MDLWS9fT/KINGDOM-1080-x-1080-px-1.webp" alt="Kingdom"
+                        class="authority-img">
+                    <div class="authority-content">
+                        <h4>Kingdom Assessoria</h4>
+                        <p>Referência em assessoria de marketing digital para empresas que querem escalar suas vendas de
+                            forma inteligente e lucrativa.</p>
+                        <div class="authority-badges">
+                            <span class="a-badge">🏆 +200 empresas</span>
+                            <span class="a-badge">⭐ 4.9/5 avaliação</span>
+                            <span class="a-badge">📈 Resultados comprovados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vsl-urgency animate-slide-up delay-4">
+                <div class="urgency-card">
+                    <div class="urgency-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="urgency-content">
+                        <h4>⚠️ Atenção: Vagas muito limitadas</h4>
+                        <p>Devido à alta demanda, estamos aceitando apenas <strong>5 novos clientes</strong> este mês.
+                            Garanta sua vaga agora antes que seja preenchida.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vsl-cta-section animate-slide-up delay-4">
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20assessoria%20da%20Kingdom!"
+                    class="btn-whatsapp" id="btnWhatsApp" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    <span>Falar com um especialista agora</span>
+                </a>
+                <p class="vsl-limited-text">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="8" x2="12" y2="12" />
+                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    Vagas limitadas para novos atendimentos.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <footer class="vsl-footer">
+                <img src="https://i.ibb.co/TjL1Zt3/logor9.webp" alt="Kingdom Assessoria" class="footer-logo">
+                <p>© 2026 Kingdom Assessoria. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Service Modal (Popup) -->
+    <div class="modal-overlay" id="servicoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                        <polyline points="2 17 12 22 22 17" />
+                        <polyline points="2 12 12 17 22 12" />
+                    </svg>
+                    <span>Selecione o Serviço</span>
+                </div>
+                <button class="modal-close" id="servicoModalClose" aria-label="Fechar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-option" data-value="Gestão de anúncio (tráfego pago)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Gestão de anúncio</span>
+                        <span class="modal-option-desc">Campanhas no Google, Meta e TikTok</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Criação de Página">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                        <line x1="3" y1="9" x2="21" y2="9" />
+                        <line x1="9" y1="21" x2="9" y2="9" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Criação de Página</span>
+                        <span class="modal-option-desc">Landing pages de alta conversão</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Criação de Site institucional">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                        <line x1="8" y1="21" x2="16" y2="21" />
+                        <line x1="12" y1="17" x2="12" y2="21" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Site institucional</span>
+                        <span class="modal-option-desc">Sites profissionais e responsivos</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Automação atendimento">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Automação atendimento</span>
+                        <span class="modal-option-desc">Chatbots e automação de WhatsApp</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Estratégia de marketing">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Estratégia de marketing</span>
+                        <span class="modal-option-desc">Planejamento estratégico completo</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Criativos">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Criativos</span>
+                        <span class="modal-option-desc">Design de peças publicitárias</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Identidade visual">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="13.5" cy="6.5" r="2.5" />
+                        <circle cx="19" cy="13" r="2.5" />
+                        <circle cx="6" cy="12" r="2.5" />
+                        <circle cx="12" cy="19" r="2.5" />
+                        <path d="M12 2a10 10 0 0 1 0 20" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Identidade visual</span>
+                        <span class="modal-option-desc">Logotipo e branding completo</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Outro">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="19" cy="12" r="1" />
+                        <circle cx="5" cy="12" r="1" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Outro</span>
+                        <span class="modal-option-desc">Outro serviço não listado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marketing Modal (Popup) -->
+    <div class="modal-overlay" id="marketingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    </svg>
+                    <span>Investimento em Marketing</span>
+                </div>
+                <button class="modal-close" id="marketingModalClose" aria-label="Fechar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-option" data-value="Sim, invisto atualmente">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Sim, invisto atualmente</span>
+                        <span class="modal-option-desc">Possuo campanhas ativas em rodagem</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Já investi, mas parei">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="15" y1="9" x2="9" y2="15" />
+                        <line x1="9" y1="9" x2="15" y2="15" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Já investi, mas parei</span>
+                        <span class="modal-option-desc">Tive experiências anteriores com anúncios</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Nunca investi">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="8" y1="12" x2="16" y2="12" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Nunca investi</span>
+                        <span class="modal-option-desc">Vou começar do absoluto zero agora</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interest Modal (Popup) -->
+    <div class="modal-overlay" id="interesseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                    </svg>
+                    <span>Interesse em Vendas</span>
+                </div>
+                <button class="modal-close" id="interesseModalClose" aria-label="Fechar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-option" data-value="Alto - Preciso de resultados agora">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Alto - Decidido</span>
+                        <span class="modal-option-desc">Preciso de escala e resultados imediatos</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Médio - Estou avaliando opções">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Médio - Avaliando</span>
+                        <span class="modal-option-desc">Buscando a melhor assessoria custo-benefício</span>
+                    </div>
+                </div>
+                <div class="modal-option" data-value="Baixo - Apenas curiosidade">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <div class="modal-option-info">
+                        <span class="modal-option-name">Baixo - Estudando</span>
+                        <span class="modal-option-desc">Apenas colhendo informações no momento</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
